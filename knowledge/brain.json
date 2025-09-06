@@ -151,12 +151,17 @@
       "document": "Advanced Orchestration Patterns",
       "integrated": "2025-09-06T02:44:18.589Z",
       "items": 14
+    },
+    {
+      "document": "Advanced AI Orchestration Patterns",
+      "integrated": "2025-09-06T03:44:32.514Z",
+      "items": 2
     }
   ],
   "improvement_metrics": {
     "tasks_automated": 0,
     "efficiency_score": 0,
-    "knowledge_items": 14,
+    "knowledge_items": 16,
     "protocols_implemented": 0
   }
 }
