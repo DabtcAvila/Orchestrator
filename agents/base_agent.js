@@ -16,6 +16,21 @@ class BaseAgent {
     this.taskQueue = [];
     this.logFile = path.join(__dirname, '..', 'logs', `${this.name}.log`);
     this.taskFile = path.join(__dirname, '..', 'data', `${this.name}_tasks.json`);
+    this.modelConfigFile = path.join(__dirname, '..', 'config', 'models.json');
+    this.modelConfig = this.loadModelConfig();
+  }
+
+  loadModelConfig() {
+    try {
+      const config = JSON.parse(fs.readFileSync(this.modelConfigFile, 'utf8'));
+      return config.models.agents;
+    } catch (error) {
+      return {
+        model: 'claude-sonnet-4-20241022',
+        name: 'Claude Sonnet 4',
+        provider: 'anthropic'
+      };
+    }
   }
 
   log(message, level = 'info') {
@@ -32,6 +47,7 @@ class BaseAgent {
 
   initialize() {
     this.log(`Agent ${this.name} (${this.type}) initializing...`);
+    this.log(`Model: ${this.modelConfig.name} (${this.modelConfig.model})`);
     this.log(`Capabilities: ${this.capabilities.join(', ')}`);
     this.status = 'ready';
     this.loadTasks();
@@ -118,9 +134,14 @@ class BaseAgent {
   }
 
   async executeTask(task) {
-    this.log(`Executing: ${task.command || task.name}`);
+    this.log(`Executing: ${task.command || task.name} [Model: ${this.modelConfig.name}]`);
     await new Promise(resolve => setTimeout(resolve, 2000));
-    return { success: true, result: 'Task executed by base agent' };
+    return { 
+      success: true, 
+      result: 'Task executed by base agent',
+      model: this.modelConfig.model,
+      modelName: this.modelConfig.name
+    };
   }
 
   getStatus() {
@@ -132,7 +153,9 @@ class BaseAgent {
       currentTask: this.currentTask?.name || null,
       queueLength: this.taskQueue.length,
       tasksCompleted: this.tasksCompleted,
-      capabilities: this.capabilities
+      capabilities: this.capabilities,
+      model: this.modelConfig.model,
+      modelName: this.modelConfig.name
     };
   }
 

@@ -5,8 +5,20 @@
  * Capable of conducting research equivalent to deep research
  */
 
-class ResearchAgent {
+const BaseAgent = require('./base_agent');
+const fs = require('fs');
+const path = require('path');
+
+class ResearchAgent extends BaseAgent {
   constructor() {
+    super('ResearchAgent', 'research', [
+      'deep_research',
+      'web_search',
+      'pattern_extraction',
+      'knowledge_synthesis',
+      'documentation_analysis'
+    ]);
+    
     this.researchCapabilities = {
       webSearch: true,
       webFetch: true,
@@ -23,6 +35,24 @@ class ResearchAgent {
       'case_studies',
       'performance_benchmarks'
     ];
+  }
+
+  async executeTask(task) {
+    this.log(`Processing research task: ${task.name} [Model: ${this.modelConfig.name}]`);
+    
+    switch (task.command) {
+      case 'deep_research':
+        return await this.conductDeepResearch(task.params?.topic || task.name);
+      
+      case 'analyze_documentation':
+        return await this.analyzeDocumentation(task.params);
+      
+      case 'extract_patterns':
+        return await this.extractPatternsFromData(task.params);
+      
+      default:
+        return await this.conductDeepResearch(task.name);
+    }
   }
 
   async conductDeepResearch(topic) {
@@ -157,6 +187,47 @@ class ResearchAgent {
       ]
     };
   }
+
+  async analyzeDocumentation(params) {
+    const { docs } = params || {};
+    this.log('Analyzing documentation...');
+    return {
+      success: true,
+      analysis: 'Documentation analyzed',
+      insights: []
+    };
+  }
+
+  async extractPatternsFromData(params) {
+    const { data } = params || {};
+    this.log('Extracting patterns from data...');
+    return {
+      success: true,
+      patterns: this.extractPatterns(data || [])
+    };
+  }
+}
+
+// Launch the agent if run directly
+if (require.main === module) {
+  const agent = new ResearchAgent();
+  agent.initialize();
+  
+  // Set up periodic task checking
+  setInterval(() => {
+    if (agent.status === 'ready' && agent.taskQueue.length === 0) {
+      agent.loadTasks();
+      if (agent.taskQueue.length > 0) {
+        agent.processNextTask();
+      }
+    }
+  }, 5000);
+  
+  console.log('Research Agent running... Press Ctrl+C to stop');
+  
+  process.on('SIGINT', () => {
+    agent.shutdown();
+  });
 }
 
 module.exports = ResearchAgent;

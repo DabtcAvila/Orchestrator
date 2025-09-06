@@ -8,8 +8,10 @@ class OrchestratorController {
     this.agents = {};
     this.taskQueueFile = path.join(__dirname, 'task_queue.json');
     this.configFile = path.join(__dirname, '..', 'config', 'orchestrator.json');
+    this.modelConfigFile = path.join(__dirname, '..', 'config', 'models.json');
     this.logFile = path.join(__dirname, '..', 'logs', 'orchestrator_controller.log');
     this.taskIdCounter = 1;
+    this.modelConfig = null;
   }
 
   log(message, level = 'info') {
@@ -27,6 +29,7 @@ class OrchestratorController {
   initialize() {
     this.log('Orchestrator Controller initializing...');
     this.loadConfig();
+    this.loadModelConfig();
     this.setupAgents();
     this.log('Controller ready - Agents can be launched via terminal');
   }
@@ -40,23 +43,50 @@ class OrchestratorController {
     }
   }
 
+  loadModelConfig() {
+    try {
+      this.modelConfig = JSON.parse(fs.readFileSync(this.modelConfigFile, 'utf8'));
+      this.log(`Model configuration loaded:`);
+      this.log(`  Orchestrator: ${this.modelConfig.models.orchestrator.name} (${this.modelConfig.models.orchestrator.model})`);
+      this.log(`  Agents: ${this.modelConfig.models.agents.name} (${this.modelConfig.models.agents.model})`);
+    } catch (error) {
+      this.log(`Failed to load model config: ${error.message}`, 'error');
+      this.modelConfig = {
+        models: {
+          orchestrator: { model: 'claude-opus-4-1-20250805', name: 'Claude Opus 4.1' },
+          agents: { model: 'claude-sonnet-4-20241022', name: 'Claude Sonnet 4' }
+        }
+      };
+      this.log('Using default model configuration', 'warning');
+    }
+  }
+
   setupAgents() {
     this.agentDefinitions = {
       data_processor: {
         script: 'data_processor.js',
-        capabilities: ['json_parsing', 'data_transformation', 'report_generation']
+        capabilities: ['json_parsing', 'data_transformation', 'report_generation'],
+        model: this.modelConfig?.models?.agents?.model || 'claude-sonnet-4-20241022'
       },
       file_manager: {
         script: 'file_manager.js',
-        capabilities: ['file_operations', 'backup_creation', 'cleanup_operations']
+        capabilities: ['file_operations', 'backup_creation', 'cleanup_operations'],
+        model: this.modelConfig?.models?.agents?.model || 'claude-sonnet-4-20241022'
       },
       monitor: {
         script: 'monitor_agent.js',
-        capabilities: ['system_monitoring', 'alert_generation', 'health_checks']
+        capabilities: ['system_monitoring', 'alert_generation', 'health_checks'],
+        model: this.modelConfig?.models?.agents?.model || 'claude-sonnet-4-20241022'
+      },
+      research: {
+        script: 'research_agent.js',
+        capabilities: ['deep_research', 'web_search', 'pattern_extraction', 'knowledge_synthesis'],
+        model: this.modelConfig?.models?.agents?.model || 'claude-sonnet-4-20241022'
       }
     };
 
     this.log(`Available agents: ${Object.keys(this.agentDefinitions).join(', ')}`);
+    this.log(`All agents configured to use: ${this.modelConfig?.models?.agents?.name || 'Claude Sonnet 4'}`);
   }
 
   createTask(name, description, command, params = {}, priority = 'normal', targetAgent = null) {
@@ -173,7 +203,11 @@ class OrchestratorController {
       tasks.push({
         ...task,
         assignedAt: new Date().toISOString(),
-        status: 'pending'
+        status: 'pending',
+        modelConfig: {
+          model: this.agentDefinitions[agentType]?.model,
+          name: this.modelConfig?.models?.agents?.name
+        }
       });
       
       fs.writeFileSync(agentTaskFile, JSON.stringify(tasks, null, 2));
