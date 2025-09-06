@@ -1,0 +1,30 @@
+{
+  "agent": "file-manager",
+  "branch": "agent/file-manager",
+  "permissions": {
+    "read": ["*"],
+    "write": ["data", "backups", "temp"],
+    "execute": ["scripts/file_*.js", "scripts/backup_*.sh"],
+    "restricted": [".git", "node_modules", "secrets"]
+  },
+  "capabilities": {
+    "maxConcurrentTasks": 3,
+    "allowedOperations": [
+      "file_operations",
+      "backup_creation",
+      "directory_management",
+      "cleanup",
+      "archiving"
+    ],
+    "resourceLimits": {
+      "maxMemoryMB": 256,
+      "maxCPUPercent": 20,
+      "maxFileSizeMB": 1000
+    }
+  },
+  "security": {
+    "sandboxed": true,
+    "allowNetworkAccess": false,
+    "allowSystemCalls": true
+  }
+}

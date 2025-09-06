@@ -1,0 +1,30 @@
+{
+  "agent": "data-processor",
+  "branch": "agent/data-processor",
+  "permissions": {
+    "read": ["data", "logs", "config"],
+    "write": ["data", "logs"],
+    "execute": ["scripts/data_*.js"],
+    "restricted": ["agents", "protocols", ".git"]
+  },
+  "capabilities": {
+    "maxConcurrentTasks": 5,
+    "allowedOperations": [
+      "json_parsing",
+      "data_transformation",
+      "aggregation",
+      "report_generation",
+      "analysis"
+    ],
+    "resourceLimits": {
+      "maxMemoryMB": 512,
+      "maxCPUPercent": 30,
+      "maxFileSizeMB": 100
+    }
+  },
+  "security": {
+    "sandboxed": true,
+    "allowNetworkAccess": false,
+    "allowSystemCalls": false
+  }
+}

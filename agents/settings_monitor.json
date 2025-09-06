@@ -1,0 +1,42 @@
+{
+  "agent": "monitor",
+  "branch": "agent/monitor",
+  "permissions": {
+    "read": ["*"],
+    "write": ["logs", "monitoring", "alerts"],
+    "execute": ["scripts/monitor_*.js"],
+    "restricted": [".env", "secrets", "credentials"]
+  },
+  "capabilities": {
+    "maxConcurrentTasks": 10,
+    "allowedOperations": [
+      "system_monitoring",
+      "health_checks",
+      "alert_generation",
+      "metrics_collection",
+      "performance_analysis"
+    ],
+    "resourceLimits": {
+      "maxMemoryMB": 128,
+      "maxCPUPercent": 10,
+      "maxFileSizeMB": 50
+    }
+  },
+  "security": {
+    "sandboxed": false,
+    "allowNetworkAccess": true,
+    "allowSystemCalls": true
+  },
+  "alerts": {
+    "criticalThreshold": {
+      "cpu": 90,
+      "memory": 85,
+      "disk": 95
+    },
+    "warningThreshold": {
+      "cpu": 70,
+      "memory": 70,
+      "disk": 80
+    }
+  }
+}
