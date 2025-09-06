@@ -1,0 +1,10 @@
+[2025-09-06T17:39:56.662Z] [FileManager] [INFO] Agent FileManager (manager) initializing...
+[2025-09-06T17:39:56.663Z] [FileManager] [INFO] Model: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:39:56.663Z] [FileManager] [INFO] Capabilities: file_operations, directory_management, backup_creation, file_monitoring, cleanup_operations
+[2025-09-06T17:39:56.663Z] [FileManager] [INFO] Agent ready and waiting for tasks
+[2025-09-06T17:42:47.225Z] [FileManager] [INFO] Agent shutting down...
+[2025-09-06T17:42:47.498Z] [FileManager] [INFO] Agent FileManager (manager) initializing...
+[2025-09-06T17:42:47.499Z] [FileManager] [INFO] Model: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:42:47.499Z] [FileManager] [INFO] Capabilities: file_operations, directory_management, backup_creation, file_monitoring, cleanup_operations
+[2025-09-06T17:42:47.499Z] [FileManager] [INFO] Loaded 0 pending tasks
+[2025-09-06T17:42:47.499Z] [FileManager] [INFO] Agent ready and waiting for tasks

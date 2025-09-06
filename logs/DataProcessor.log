@@ -1,0 +1,80 @@
+[2025-09-06T17:39:56.639Z] [DataProcessor] [INFO] Agent DataProcessor (processor) initializing...
+[2025-09-06T17:39:56.640Z] [DataProcessor] [INFO] Model: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:39:56.640Z] [DataProcessor] [INFO] Capabilities: json_parsing, data_transformation, file_analysis, data_aggregation, report_generation
+[2025-09-06T17:39:56.640Z] [DataProcessor] [INFO] Agent ready and waiting for tasks
+[2025-09-06T17:39:56.715Z] [DataProcessor] [INFO] Agent DataProcessor (processor) initializing...
+[2025-09-06T17:39:56.716Z] [DataProcessor] [INFO] Model: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:39:56.716Z] [DataProcessor] [INFO] Capabilities: json_parsing, data_transformation, file_analysis, data_aggregation, report_generation
+[2025-09-06T17:39:56.716Z] [DataProcessor] [INFO] Agent ready and waiting for tasks
+[2025-09-06T17:39:56.781Z] [DataProcessor] [INFO] Agent DataProcessor (processor) initializing...
+[2025-09-06T17:39:56.782Z] [DataProcessor] [INFO] Model: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:39:56.782Z] [DataProcessor] [INFO] Capabilities: json_parsing, data_transformation, file_analysis, data_aggregation, report_generation
+[2025-09-06T17:39:56.782Z] [DataProcessor] [INFO] Agent ready and waiting for tasks
+[2025-09-06T17:39:56.857Z] [DataProcessor] [INFO] Agent DataProcessor (processor) initializing...
+[2025-09-06T17:39:56.858Z] [DataProcessor] [INFO] Model: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:39:56.858Z] [DataProcessor] [INFO] Capabilities: json_parsing, data_transformation, file_analysis, data_aggregation, report_generation
+[2025-09-06T17:39:56.858Z] [DataProcessor] [INFO] Agent ready and waiting for tasks
+[2025-09-06T17:39:56.917Z] [DataProcessor] [INFO] Agent DataProcessor (processor) initializing...
+[2025-09-06T17:39:56.918Z] [DataProcessor] [INFO] Model: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:39:56.918Z] [DataProcessor] [INFO] Capabilities: json_parsing, data_transformation, file_analysis, data_aggregation, report_generation
+[2025-09-06T17:39:56.918Z] [DataProcessor] [INFO] Agent ready and waiting for tasks
+[2025-09-06T17:39:56.981Z] [DataProcessor] [INFO] Agent DataProcessor (processor) initializing...
+[2025-09-06T17:39:56.981Z] [DataProcessor] [INFO] Model: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:39:56.981Z] [DataProcessor] [INFO] Capabilities: json_parsing, data_transformation, file_analysis, data_aggregation, report_generation
+[2025-09-06T17:39:56.981Z] [DataProcessor] [INFO] Agent ready and waiting for tasks
+[2025-09-06T17:39:57.045Z] [DataProcessor] [INFO] Agent DataProcessor (processor) initializing...
+[2025-09-06T17:39:57.046Z] [DataProcessor] [INFO] Model: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:39:57.046Z] [DataProcessor] [INFO] Capabilities: json_parsing, data_transformation, file_analysis, data_aggregation, report_generation
+[2025-09-06T17:39:57.046Z] [DataProcessor] [INFO] Agent ready and waiting for tasks
+[2025-09-06T17:39:57.107Z] [DataProcessor] [INFO] Agent DataProcessor (processor) initializing...
+[2025-09-06T17:39:57.108Z] [DataProcessor] [INFO] Model: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:39:57.108Z] [DataProcessor] [INFO] Capabilities: json_parsing, data_transformation, file_analysis, data_aggregation, report_generation
+[2025-09-06T17:39:57.108Z] [DataProcessor] [INFO] Agent ready and waiting for tasks
+[2025-09-06T17:39:57.169Z] [DataProcessor] [INFO] Agent DataProcessor (processor) initializing...
+[2025-09-06T17:39:57.169Z] [DataProcessor] [INFO] Model: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:39:57.169Z] [DataProcessor] [INFO] Capabilities: json_parsing, data_transformation, file_analysis, data_aggregation, report_generation
+[2025-09-06T17:39:57.170Z] [DataProcessor] [INFO] Agent ready and waiting for tasks
+[2025-09-06T17:39:57.229Z] [DataProcessor] [INFO] Agent DataProcessor (processor) initializing...
+[2025-09-06T17:39:57.230Z] [DataProcessor] [INFO] Model: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:39:57.230Z] [DataProcessor] [INFO] Capabilities: json_parsing, data_transformation, file_analysis, data_aggregation, report_generation
+[2025-09-06T17:39:57.230Z] [DataProcessor] [INFO] Agent ready and waiting for tasks
+[2025-09-06T17:42:47.483Z] [DataProcessor] [INFO] Agent DataProcessor (processor) initializing...
+[2025-09-06T17:42:47.484Z] [DataProcessor] [INFO] Model: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:42:47.484Z] [DataProcessor] [INFO] Capabilities: json_parsing, data_transformation, file_analysis, data_aggregation, report_generation
+[2025-09-06T17:42:47.484Z] [DataProcessor] [INFO] Agent ready and waiting for tasks
+[2025-09-06T17:42:47.552Z] [DataProcessor] [INFO] Agent DataProcessor (processor) initializing...
+[2025-09-06T17:42:47.552Z] [DataProcessor] [INFO] Model: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:42:47.552Z] [DataProcessor] [INFO] Capabilities: json_parsing, data_transformation, file_analysis, data_aggregation, report_generation
+[2025-09-06T17:42:47.552Z] [DataProcessor] [INFO] Agent ready and waiting for tasks
+[2025-09-06T17:42:47.610Z] [DataProcessor] [INFO] Agent DataProcessor (processor) initializing...
+[2025-09-06T17:42:47.610Z] [DataProcessor] [INFO] Model: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:42:47.611Z] [DataProcessor] [INFO] Capabilities: json_parsing, data_transformation, file_analysis, data_aggregation, report_generation
+[2025-09-06T17:42:47.611Z] [DataProcessor] [INFO] Agent ready and waiting for tasks
+[2025-09-06T17:42:47.669Z] [DataProcessor] [INFO] Agent DataProcessor (processor) initializing...
+[2025-09-06T17:42:47.670Z] [DataProcessor] [INFO] Model: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:42:47.670Z] [DataProcessor] [INFO] Capabilities: json_parsing, data_transformation, file_analysis, data_aggregation, report_generation
+[2025-09-06T17:42:47.670Z] [DataProcessor] [INFO] Agent ready and waiting for tasks
+[2025-09-06T17:42:47.727Z] [DataProcessor] [INFO] Agent DataProcessor (processor) initializing...
+[2025-09-06T17:42:47.728Z] [DataProcessor] [INFO] Model: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:42:47.728Z] [DataProcessor] [INFO] Capabilities: json_parsing, data_transformation, file_analysis, data_aggregation, report_generation
+[2025-09-06T17:42:47.728Z] [DataProcessor] [INFO] Agent ready and waiting for tasks
+[2025-09-06T17:42:47.780Z] [DataProcessor] [INFO] Agent DataProcessor (processor) initializing...
+[2025-09-06T17:42:47.781Z] [DataProcessor] [INFO] Model: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:42:47.781Z] [DataProcessor] [INFO] Capabilities: json_parsing, data_transformation, file_analysis, data_aggregation, report_generation
+[2025-09-06T17:42:47.781Z] [DataProcessor] [INFO] Agent ready and waiting for tasks
+[2025-09-06T17:42:47.833Z] [DataProcessor] [INFO] Agent DataProcessor (processor) initializing...
+[2025-09-06T17:42:47.834Z] [DataProcessor] [INFO] Model: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:42:47.834Z] [DataProcessor] [INFO] Capabilities: json_parsing, data_transformation, file_analysis, data_aggregation, report_generation
+[2025-09-06T17:42:47.834Z] [DataProcessor] [INFO] Agent ready and waiting for tasks
+[2025-09-06T17:42:47.886Z] [DataProcessor] [INFO] Agent DataProcessor (processor) initializing...
+[2025-09-06T17:42:47.886Z] [DataProcessor] [INFO] Model: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:42:47.886Z] [DataProcessor] [INFO] Capabilities: json_parsing, data_transformation, file_analysis, data_aggregation, report_generation
+[2025-09-06T17:42:47.886Z] [DataProcessor] [INFO] Agent ready and waiting for tasks
+[2025-09-06T17:42:47.938Z] [DataProcessor] [INFO] Agent DataProcessor (processor) initializing...
+[2025-09-06T17:42:47.938Z] [DataProcessor] [INFO] Model: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:42:47.938Z] [DataProcessor] [INFO] Capabilities: json_parsing, data_transformation, file_analysis, data_aggregation, report_generation
+[2025-09-06T17:42:47.939Z] [DataProcessor] [INFO] Agent ready and waiting for tasks
+[2025-09-06T17:42:47.991Z] [DataProcessor] [INFO] Agent DataProcessor (processor) initializing...
+[2025-09-06T17:42:47.992Z] [DataProcessor] [INFO] Model: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:42:47.992Z] [DataProcessor] [INFO] Capabilities: json_parsing, data_transformation, file_analysis, data_aggregation, report_generation
+[2025-09-06T17:42:47.992Z] [DataProcessor] [INFO] Agent ready and waiting for tasks

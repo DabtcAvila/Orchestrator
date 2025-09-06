@@ -6,3 +6,91 @@
 [2025-09-06T17:32:35.549Z] [CONTROLLER] [INFO] Available agents: data_processor, file_manager, monitor, research
 [2025-09-06T17:32:35.549Z] [CONTROLLER] [INFO] All agents configured to use: Claude Sonnet 4
 [2025-09-06T17:32:35.549Z] [CONTROLLER] [INFO] Controller ready - Agents can be launched via terminal
+[2025-09-06T17:39:56.636Z] [CONTROLLER] [INFO] Orchestrator Controller initializing...
+[2025-09-06T17:39:56.638Z] [CONTROLLER] [INFO] Configuration loaded: Home Orchestrator v3.0.0
+[2025-09-06T17:39:56.638Z] [CONTROLLER] [INFO] Model configuration loaded:
+[2025-09-06T17:39:56.638Z] [CONTROLLER] [INFO]   Orchestrator: Claude Opus 4.1 (claude-opus-4-1-20250805)
+[2025-09-06T17:39:56.638Z] [CONTROLLER] [INFO]   Agents: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:39:56.638Z] [CONTROLLER] [INFO] Available agents: data_processor, file_manager, monitor, research
+[2025-09-06T17:39:56.638Z] [CONTROLLER] [INFO] All agents configured to use: Claude Sonnet 4
+[2025-09-06T17:39:56.638Z] [CONTROLLER] [INFO] Controller ready - Agents can be launched via terminal
+[2025-09-06T17:39:56.727Z] [CONTROLLER] [INFO] Orchestrator Controller initializing...
+[2025-09-06T17:39:56.728Z] [CONTROLLER] [INFO] Configuration loaded: Home Orchestrator v3.0.0
+[2025-09-06T17:39:56.728Z] [CONTROLLER] [INFO] Model configuration loaded:
+[2025-09-06T17:39:56.728Z] [CONTROLLER] [INFO]   Orchestrator: Claude Opus 4.1 (claude-opus-4-1-20250805)
+[2025-09-06T17:39:56.728Z] [CONTROLLER] [INFO]   Agents: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:39:56.729Z] [CONTROLLER] [INFO] Available agents: data_processor, file_manager, monitor, research
+[2025-09-06T17:39:56.729Z] [CONTROLLER] [INFO] All agents configured to use: Claude Sonnet 4
+[2025-09-06T17:39:56.729Z] [CONTROLLER] [INFO] Controller ready - Agents can be launched via terminal
+[2025-09-06T17:39:56.793Z] [CONTROLLER] [INFO] Orchestrator Controller initializing...
+[2025-09-06T17:39:56.794Z] [CONTROLLER] [INFO] Configuration loaded: Home Orchestrator v3.0.0
+[2025-09-06T17:39:56.794Z] [CONTROLLER] [INFO] Model configuration loaded:
+[2025-09-06T17:39:56.794Z] [CONTROLLER] [INFO]   Orchestrator: Claude Opus 4.1 (claude-opus-4-1-20250805)
+[2025-09-06T17:39:56.794Z] [CONTROLLER] [INFO]   Agents: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:39:56.794Z] [CONTROLLER] [INFO] Available agents: data_processor, file_manager, monitor, research
+[2025-09-06T17:39:56.794Z] [CONTROLLER] [INFO] All agents configured to use: Claude Sonnet 4
+[2025-09-06T17:39:56.794Z] [CONTROLLER] [INFO] Controller ready - Agents can be launched via terminal
+[2025-09-06T17:39:56.868Z] [CONTROLLER] [INFO] Orchestrator Controller initializing...
+[2025-09-06T17:39:56.869Z] [CONTROLLER] [INFO] Configuration loaded: Home Orchestrator v3.0.0
+[2025-09-06T17:39:56.869Z] [CONTROLLER] [INFO] Model configuration loaded:
+[2025-09-06T17:39:56.869Z] [CONTROLLER] [INFO]   Orchestrator: Claude Opus 4.1 (claude-opus-4-1-20250805)
+[2025-09-06T17:39:56.869Z] [CONTROLLER] [INFO]   Agents: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:39:56.869Z] [CONTROLLER] [INFO] Available agents: data_processor, file_manager, monitor, research
+[2025-09-06T17:39:56.869Z] [CONTROLLER] [INFO] All agents configured to use: Claude Sonnet 4
+[2025-09-06T17:39:56.869Z] [CONTROLLER] [INFO] Controller ready - Agents can be launched via terminal
+[2025-09-06T17:39:56.931Z] [CONTROLLER] [INFO] Orchestrator Controller initializing...
+[2025-09-06T17:39:56.932Z] [CONTROLLER] [INFO] Configuration loaded: Home Orchestrator v3.0.0
+[2025-09-06T17:39:56.932Z] [CONTROLLER] [INFO] Model configuration loaded:
+[2025-09-06T17:39:56.932Z] [CONTROLLER] [INFO]   Orchestrator: Claude Opus 4.1 (claude-opus-4-1-20250805)
+[2025-09-06T17:39:56.932Z] [CONTROLLER] [INFO]   Agents: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:39:56.932Z] [CONTROLLER] [INFO] Available agents: data_processor, file_manager, monitor, research
+[2025-09-06T17:39:56.932Z] [CONTROLLER] [INFO] All agents configured to use: Claude Sonnet 4
+[2025-09-06T17:39:56.932Z] [CONTROLLER] [INFO] Controller ready - Agents can be launched via terminal
+[2025-09-06T17:39:56.997Z] [CONTROLLER] [INFO] Orchestrator Controller initializing...
+[2025-09-06T17:39:56.998Z] [CONTROLLER] [INFO] Configuration loaded: Home Orchestrator v3.0.0
+[2025-09-06T17:39:56.998Z] [CONTROLLER] [INFO] Model configuration loaded:
+[2025-09-06T17:39:56.998Z] [CONTROLLER] [INFO]   Orchestrator: Claude Opus 4.1 (claude-opus-4-1-20250805)
+[2025-09-06T17:39:56.998Z] [CONTROLLER] [INFO]   Agents: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:39:56.999Z] [CONTROLLER] [INFO] Available agents: data_processor, file_manager, monitor, research
+[2025-09-06T17:39:56.999Z] [CONTROLLER] [INFO] All agents configured to use: Claude Sonnet 4
+[2025-09-06T17:39:56.999Z] [CONTROLLER] [INFO] Controller ready - Agents can be launched via terminal
+[2025-09-06T17:39:57.064Z] [CONTROLLER] [INFO] Orchestrator Controller initializing...
+[2025-09-06T17:39:57.064Z] [CONTROLLER] [INFO] Configuration loaded: Home Orchestrator v3.0.0
+[2025-09-06T17:39:57.065Z] [CONTROLLER] [INFO] Model configuration loaded:
+[2025-09-06T17:39:57.065Z] [CONTROLLER] [INFO]   Orchestrator: Claude Opus 4.1 (claude-opus-4-1-20250805)
+[2025-09-06T17:39:57.065Z] [CONTROLLER] [INFO]   Agents: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:39:57.065Z] [CONTROLLER] [INFO] Available agents: data_processor, file_manager, monitor, research
+[2025-09-06T17:39:57.065Z] [CONTROLLER] [INFO] All agents configured to use: Claude Sonnet 4
+[2025-09-06T17:39:57.065Z] [CONTROLLER] [INFO] Controller ready - Agents can be launched via terminal
+[2025-09-06T17:39:57.127Z] [CONTROLLER] [INFO] Orchestrator Controller initializing...
+[2025-09-06T17:39:57.127Z] [CONTROLLER] [INFO] Configuration loaded: Home Orchestrator v3.0.0
+[2025-09-06T17:39:57.127Z] [CONTROLLER] [INFO] Model configuration loaded:
+[2025-09-06T17:39:57.127Z] [CONTROLLER] [INFO]   Orchestrator: Claude Opus 4.1 (claude-opus-4-1-20250805)
+[2025-09-06T17:39:57.128Z] [CONTROLLER] [INFO]   Agents: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:39:57.128Z] [CONTROLLER] [INFO] Available agents: data_processor, file_manager, monitor, research
+[2025-09-06T17:39:57.128Z] [CONTROLLER] [INFO] All agents configured to use: Claude Sonnet 4
+[2025-09-06T17:39:57.128Z] [CONTROLLER] [INFO] Controller ready - Agents can be launched via terminal
+[2025-09-06T17:39:57.189Z] [CONTROLLER] [INFO] Orchestrator Controller initializing...
+[2025-09-06T17:39:57.189Z] [CONTROLLER] [INFO] Configuration loaded: Home Orchestrator v3.0.0
+[2025-09-06T17:39:57.190Z] [CONTROLLER] [INFO] Model configuration loaded:
+[2025-09-06T17:39:57.190Z] [CONTROLLER] [INFO]   Orchestrator: Claude Opus 4.1 (claude-opus-4-1-20250805)
+[2025-09-06T17:39:57.190Z] [CONTROLLER] [INFO]   Agents: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:39:57.190Z] [CONTROLLER] [INFO] Available agents: data_processor, file_manager, monitor, research
+[2025-09-06T17:39:57.190Z] [CONTROLLER] [INFO] All agents configured to use: Claude Sonnet 4
+[2025-09-06T17:39:57.190Z] [CONTROLLER] [INFO] Controller ready - Agents can be launched via terminal
+[2025-09-06T17:39:57.250Z] [CONTROLLER] [INFO] Orchestrator Controller initializing...
+[2025-09-06T17:39:57.250Z] [CONTROLLER] [INFO] Configuration loaded: Home Orchestrator v3.0.0
+[2025-09-06T17:39:57.251Z] [CONTROLLER] [INFO] Model configuration loaded:
+[2025-09-06T17:39:57.251Z] [CONTROLLER] [INFO]   Orchestrator: Claude Opus 4.1 (claude-opus-4-1-20250805)
+[2025-09-06T17:39:57.251Z] [CONTROLLER] [INFO]   Agents: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:39:57.251Z] [CONTROLLER] [INFO] Available agents: data_processor, file_manager, monitor, research
+[2025-09-06T17:39:57.251Z] [CONTROLLER] [INFO] All agents configured to use: Claude Sonnet 4
+[2025-09-06T17:39:57.251Z] [CONTROLLER] [INFO] Controller ready - Agents can be launched via terminal
+[2025-09-06T17:42:47.486Z] [CONTROLLER] [INFO] Orchestrator Controller initializing...
+[2025-09-06T17:42:47.487Z] [CONTROLLER] [INFO] Configuration loaded: Home Orchestrator v3.0.0
+[2025-09-06T17:42:47.487Z] [CONTROLLER] [INFO] Model configuration loaded:
+[2025-09-06T17:42:47.488Z] [CONTROLLER] [INFO]   Orchestrator: Claude Opus 4.1 (claude-opus-4-1-20250805)
+[2025-09-06T17:42:47.488Z] [CONTROLLER] [INFO]   Agents: Claude Sonnet 4 (claude-sonnet-4-20241022)
+[2025-09-06T17:42:47.488Z] [CONTROLLER] [INFO] Available agents: data_processor, file_manager, monitor, research
+[2025-09-06T17:42:47.488Z] [CONTROLLER] [INFO] All agents configured to use: Claude Sonnet 4
+[2025-09-06T17:42:47.488Z] [CONTROLLER] [INFO] Controller ready - Agents can be launched via terminal
