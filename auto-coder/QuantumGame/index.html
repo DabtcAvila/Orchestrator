@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QuantumGame - AI Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: monospace;
+        }
+        #game {
+            border: 2px solid #0ff;
+            position: relative;
+        }
+        #score {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #0ff;
+            font-size: 20px;
+        }
+        .ai-status {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #f0f;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="game" width="800" height="600"></canvas>
+    <div id="score">Score: 0</div>
+    <div class="ai-status">AI: Learning...</div>
+    
+    <script>
+        const canvas = document.getElementById('game');
+        const ctx = canvas.getContext('2d');
+        let score = 0;
+        
+        // Player
+        const player = {
+            x: 400,
+            y: 300,
+            size: 20,
+            speed: 5,
+            color: '#0ff'
+        };
+        
+        // AI Enemies
+        const enemies = [];
+        
+        class AIEnemy {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = 15;
+                this.speed = 2;
+                this.color = '#f0f';
+                this.intelligence = 0.1;
+            }
+            
+            update() {
+                // AI behavior - learns to track player
+                const dx = player.x - this.x;
+                const dy = player.y - this.y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+                
+                if (distance > 0) {
+                    this.x += (dx / distance) * this.speed * this.intelligence;
+                    this.y += (dy / distance) * this.speed * this.intelligence;
+                }
+                
+                // AI learns over time
+                this.intelligence = Math.min(1, this.intelligence + 0.0001);
+            }
+            
+            draw() {
+                ctx.fillStyle = this.color;
+                ctx.fillRect(this.x - this.size/2, this.y - this.size/2, this.size, this.size);
+            }
+        }
+        
+        // Game loop
+        function gameLoop() {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Draw player
+            ctx.fillStyle = player.color;
+            ctx.fillRect(player.x - player.size/2, player.y - player.size/2, player.size, player.size);
+            
+            // Update and draw enemies
+            enemies.forEach((enemy, index) => {
+                enemy.update();
+                enemy.draw();
+                
+                // Collision detection
+                const dx = player.x - enemy.x;
+                const dy = player.y - enemy.y;
+                if (Math.sqrt(dx*dx + dy*dy) < player.size) {
+                    enemies.splice(index, 1);
+                    score++;
+                    document.getElementById('score').textContent = 'Score: ' + score;
+                }
+            });
+            
+            // Spawn new enemies
+            if (Math.random() < 0.02) {
+                enemies.push(new AIEnemy());
+            }
+            
+            requestAnimationFrame(gameLoop);
+        }
+        
+        // Controls
+        document.addEventListener('keydown', (e) => {
+            switch(e.key) {
+                case 'ArrowUp': player.y -= player.speed; break;
+                case 'ArrowDown': player.y += player.speed; break;
+                case 'ArrowLeft': player.x -= player.speed; break;
+                case 'ArrowRight': player.x += player.speed; break;
+            }
+        });
+        
+        // Start game
+        gameLoop();
+        console.log('QuantumGame Game Started!');
+    </script>
+</body>
+</html>
