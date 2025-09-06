@@ -152,5 +152,27 @@
       }
     },
     "agent": "SystemMonitor"
+  },
+  {
+    "id": "alert_1757180657512",
+    "timestamp": "2025-09-06T17:44:17.512Z",
+    "level": "critical",
+    "message": "System health is critical",
+    "metrics": {
+      "memory": {
+        "usage": "99.05%",
+        "free": "0.15 GB",
+        "total": "16.00 GB"
+      },
+      "cpu": {
+        "cores": 10,
+        "loadAverage": "1.97"
+      },
+      "uptime": {
+        "system": "0.48 hours",
+        "process": "1.50 minutes"
+      }
+    },
+    "agent": "SystemMonitor"
   }
 ]

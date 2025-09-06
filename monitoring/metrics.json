@@ -70,5 +70,41 @@
       },
       "uptime": 60.084119708
     }
+  },
+  {
+    "timestamp": "2025-09-06T17:44:17.510Z",
+    "system": {
+      "platform": "darwin",
+      "arch": "arm64",
+      "hostname": "Davids-MacBook-Air.local",
+      "uptime": 1725,
+      "loadAverage": [
+        1.96533203125,
+        1.60498046875,
+        2.09521484375
+      ]
+    },
+    "memory": {
+      "total": 17179869184,
+      "free": 162381824,
+      "used": 17017487360,
+      "percentUsed": "99.05"
+    },
+    "cpu": {
+      "cores": 10,
+      "model": "Apple M4",
+      "speed": 2400
+    },
+    "process": {
+      "pid": 8456,
+      "memory": {
+        "rss": 66863104,
+        "heapTotal": 9011200,
+        "heapUsed": 7786384,
+        "external": 1904550,
+        "arrayBuffers": 15207
+      },
+      "uptime": 90.085186
+    }
   }
 ]
