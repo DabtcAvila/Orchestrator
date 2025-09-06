@@ -1,0 +1,53 @@
+openapi: 3.0.0
+info:
+  title: Quantum API
+  version: 1.0.0
+  description: High-performance REST API
+
+servers:
+  - url: http://localhost:3001/api
+
+paths:
+  /users:
+    get:
+      summary: Get all users
+      responses:
+        200:
+          description: List of users
+    post:
+      summary: Create new user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                email:
+                  type: string
+                password:
+                  type: string
+
+  /metrics:
+    get:
+      summary: Get system metrics
+      responses:
+        200:
+          description: Current metrics
+
+  /tasks:
+    post:
+      summary: Submit task for processing
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                type:
+                  type: string
+                payload:
+                  type: object
