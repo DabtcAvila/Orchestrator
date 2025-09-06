@@ -1,0 +1,30 @@
+{
+  "task_id": "task_002",
+  "agent": "monitor",
+  "timestamp": "2025-01-06T20:00:00Z",
+  "priority": "high",
+  "action": "system_health_check",
+  "description": "Perform a comprehensive system health check and generate alerts if needed",
+  "parameters": {
+    "check_items": [
+      "memory_usage",
+      "cpu_usage",
+      "disk_space",
+      "process_count",
+      "network_status"
+    ],
+    "output_file": "results/health_check_002.json",
+    "alert_thresholds": {
+      "memory": 80,
+      "cpu": 75,
+      "disk": 90
+    }
+  },
+  "expected_output": {
+    "health_status": "string",
+    "metrics": "object",
+    "alerts": "array",
+    "recommendations": "array"
+  },
+  "deadline": "5_minutes"
+}

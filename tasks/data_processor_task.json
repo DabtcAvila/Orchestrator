@@ -1,0 +1,21 @@
+{
+  "task_id": "task_001",
+  "agent": "data-processor",
+  "timestamp": "2025-01-06T20:00:00Z",
+  "priority": "high",
+  "action": "analyze_system_logs",
+  "description": "Analyze the last 100 lines of orchestrator.log and create a summary report",
+  "parameters": {
+    "input_file": "logs/orchestrator.log",
+    "output_file": "results/log_analysis_001.json",
+    "analysis_type": "summary_statistics"
+  },
+  "expected_output": {
+    "total_entries": "number",
+    "error_count": "number",
+    "warning_count": "number",
+    "info_count": "number",
+    "patterns_found": "array"
+  },
+  "deadline": "5_minutes"
+}

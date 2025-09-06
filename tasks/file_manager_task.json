@@ -1,0 +1,26 @@
+{
+  "task_id": "task_003",
+  "agent": "file-manager",
+  "timestamp": "2025-01-06T20:00:00Z",
+  "priority": "medium",
+  "action": "create_backup",
+  "description": "Create a backup of all configuration and knowledge files",
+  "parameters": {
+    "backup_items": [
+      "config/",
+      "knowledge/",
+      "agents/settings_*.json"
+    ],
+    "backup_location": "backups/backup_20250106",
+    "compression": true,
+    "output_file": "results/backup_status_003.json"
+  },
+  "expected_output": {
+    "backup_id": "string",
+    "files_backed_up": "number",
+    "total_size": "string",
+    "location": "string",
+    "status": "string"
+  },
+  "deadline": "5_minutes"
+}
